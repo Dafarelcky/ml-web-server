@@ -1,0 +1,26 @@
+{
+  "name": "ml-web-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-prod": "NODE_ENV=production node src/app.js",
+    "start:dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js",
+    "upload": "node src/firestore.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.7.0",
+    "@hapi/hapi": "^21.3.9",
+    "@tensorflow/tfjs-node": "^3.21.1",
+    "dotenv": "^16.4.5",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
